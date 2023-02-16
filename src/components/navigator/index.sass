@@ -1,0 +1,120 @@
+@use 'variables'
+
+aside
+  position: fixed
+  width: 60px
+  height: 100vh
+  left: 0
+  background-color: variables.$menu
+
+.navigation
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 100vh
+  z-index: 50
+  & ul
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: fit-content
+    & li
+      position: relative
+      list-style: none
+      width: 40%
+      height: 70px
+      padding: 3.5rem 0
+      transition: 500ms ease-in-out
+      z-index: 1
+
+      & .icon
+        width: fit-content
+        cursor: pointer
+        border-radius: 50%
+        transition: 300ms
+        &:hover
+          filter: brightness(0.7)
+
+      & .text
+        transform: rotate(90deg)
+        opacity: 0
+        font-family: 'Nunito', sans-serif
+        font-weight: 400
+        transition: 1000ms
+    
+    & .active
+      translate: 300ms
+
+  & .anchor
+    position: relative
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    text-align: center
+    font-size: 0.7rem
+    text-decoration: none
+    color: #fff
+
+// seletor do botão
+.indicator
+  position: absolute
+  width: 70px
+  height: 70px 
+  left: 45%
+  top: 2.5rem
+  background: variables.$bg-color-base
+  border-radius: 50%
+  border: 6px solid variables.$menu
+  transition: 0.5s
+
+.navigation
+  & ul
+    position: relative
+    & li
+      // border: solid yellowgreen 1px
+      & a
+        // border: solid red 1px
+        & .icon
+          cursor: pointer
+          padding: 0.2rem
+          z-index: 10
+        
+    & li:nth-child(1)
+      &.active
+        width: 100%
+        & .text
+          opacity: 1
+      &.active ~ .indicator
+        transform: translateY(.3rem)
+    & li:nth-child(2)
+      &.active
+        width: 100%
+        & .text
+          opacity: 1
+      &.active ~ .indicator
+        transform: translateY(calc(70px + 2.7rem))
+    & li:nth-child(3)
+      &.active
+        width: 100%
+        & .text
+          opacity: 1
+      &.active ~ .indicator
+        transform: translateY(calc(80px + 9.3rem))
+    & li:nth-child(4)
+      &.active
+        width: 100%
+        & .text
+          opacity: 1
+      &.active ~ .indicator
+        transform: translateY(calc(80px + 16rem))
+    & li:nth-child(5)
+      &.active
+        width: 100%
+        & .text
+          opacity: 1
+      &.active ~ .indicator
+        transform: translateY(calc(80px + 23rem))

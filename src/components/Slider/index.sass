@@ -1,0 +1,64 @@
+@use '../../variables'
+@mixin sectionContainer
+  position: relative
+  width: 70%
+  padding: 0 10rem
+
+.container
+  @include sectionContainer
+  .textcar
+    padding: 5rem
+    max-width: 36rem
+    & h2
+      font-size: 1.8rem
+      font-weight: 700
+    & p
+      font-family: 'Nunito', sans-serif
+      font-weight: 300
+    & img
+      width: 32px
+      margin-top: 1rem
+      &:hover
+        filter: brightness(0.7)
+    & .slide
+      display: flex
+      flex-direction: column
+      width: 100%
+    & .slide2
+      display: flex
+      flex-direction: column
+      width: 100%
+    & a
+      text-decoration: none
+
+    & .textcar
+      padding-top: 5rem
+      max-width: 36rem
+      & h2, p
+        text-shadow: 15px 15px 5px variables.$shadow
+      & h2
+        font-size: 1.8rem
+        font-weight: 700
+      & p
+        font-family: 'Nunito', sans-serif
+        font-weight: 300
+      & img
+        box-shadow: 0 0 0 #00000000
+        width: 32px
+        margin-top: 1rem
+        &:hover
+          filter: brightness(0.7)
+
+
+
+.slide-controller, .slide-controller2 
+    margin-top: 3rem
+    padding: .5rem
+
+.slide-controller:focus, .slide-controller2:focus
+    outline: none
+
+.slide-show
+  width: 500px
+  height: 600px
+  overflow: hidden
