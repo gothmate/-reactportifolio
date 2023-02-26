@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import ContactBig from '/GetInTouchBig.svg'
-import db from '../../../data/db.json'
+
 
 export default function Contato() {
 
