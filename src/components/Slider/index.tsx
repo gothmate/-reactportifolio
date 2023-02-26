@@ -7,19 +7,20 @@ export default function Slider({works, games}: { works?: any[], games?: any[]}) 
 	const [slide, setSlide] = useState('slide');
 	const [list, setList] = useState('slides-list');
 
-	function controllerConnect() {
+	function controllerConnect(): void {
 		if (works) {
 			setController('slide-controller')
 			setSlide('slide')
 			setList('slides-list')
-		} else {
+		} 
+		if (games) {
 			setController('slide-controller2')
 			setSlide('slide2')
 			setList('games-list')
 		}
 	}
 
-	useEffect(() => controllerConnect, []);
+	useEffect(() => controllerConnect(), []);
 
 	return (
 		<div className='container'>
