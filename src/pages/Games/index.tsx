@@ -1,6 +1,8 @@
 import Slider from '../../components/Slider';
 import GamesBig from '/GamesBig.svg'
 
+import '../../styles/games.sass'
+
 export default function Games() {
 
     const gameItems = [

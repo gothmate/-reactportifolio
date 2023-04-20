@@ -5,6 +5,8 @@ import CodepenLogo from '/CodepenLogo.svg'
 import ProfilePic from '/wow.jpg'
 import HomeBig from '/HomeBig.svg'
 
+import '../../styles/home.sass'
+
 export default function Home() {
     return (
         <section className="pageContainer" id="home">
@@ -36,5 +38,5 @@ export default function Home() {
                 </div>
             </div>
         </section>
-    );
+    )
 }

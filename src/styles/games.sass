@@ -1,0 +1,17 @@
+@use 'variables'
+
+#games
+  @include variables.index
+  position: relative
+  & .bgCover
+    position: absolute
+    width: calc(100vw + 20px)
+    height: 100vh
+    top: 0
+    left: -20px
+    background: #272727
+    z-index: -1
+  & .big
+    @include variables.big
+    top: 60%
+    left: 80%

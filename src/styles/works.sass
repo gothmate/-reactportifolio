@@ -1,0 +1,18 @@
+@use 'variables'
+
+#works
+  @include variables.index
+  position: relative
+  & .rain
+    position: absolute
+    top: 0
+    left: -20px
+    width: 120vw
+    overflow-y: hidden
+    z-index: -2 
+    opacity: .6
+
+  & .big
+    @include variables.big
+    left: 80%
+    top: 30%

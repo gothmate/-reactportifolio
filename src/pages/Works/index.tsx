@@ -3,6 +3,7 @@ import Slider from '../../components/Slider';
 import WorksBig from '/Works.svg'
 import Rain from '/Raindrops.gif'
 
+import '../../styles/works.sass'
 
 export default function Works() {
   const workItems = [
