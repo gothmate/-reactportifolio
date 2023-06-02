@@ -8,7 +8,7 @@
     display: flex
     justify-content: flex-end
     & .repositories
-      max-width: 90%
+      max-width: 85vw
   & .big
     @include variables.big
     top: 70%
@@ -22,7 +22,6 @@
     li
       list-style: none
       .li-card
-        border: solid
         display: flex
         flex-direction: column
         width: fit-content
@@ -40,3 +39,8 @@
           border-radius: 5px 5px 0 0
           font-size: .7rem
 
+@media (max-width: 450px)
+  #github
+    & ul
+      gap: .3rem
+      grid-template-columns: 1fr 1fr
