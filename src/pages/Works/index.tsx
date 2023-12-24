@@ -2,6 +2,7 @@ import Slider from '../../components/Slider';
 
 import WorksBig from '/Works.svg'
 import Rain from '/Raindrops.gif'
+// import '../../styles/works.sass'
 
 interface Ititle {
     id: number;

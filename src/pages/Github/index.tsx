@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import GithubBig from '/GithubBig.svg'
 
+// import '../../styles/github.sass'
 
 interface Repositories {
     id: number;

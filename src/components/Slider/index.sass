@@ -1,4 +1,4 @@
-@use '../../variables'
+@use '../../styles/variables'
 @mixin sectionContainer
   position: relative
   width: 70%
@@ -49,8 +49,6 @@
         &:hover
           filter: brightness(0.7)
 
-
-
 .slide-controller, .slide-controller2 
     margin-top: 3rem
     padding: .5rem
@@ -62,3 +60,14 @@
   width: 500px
   height: 600px
   overflow: hidden
+
+@media (max-width: 550px)
+  .container
+    margin-left: 20%
+    left: 1rem
+  .slide-show
+    min-width: 60% 
+    max-width: 80vw 
+    & .slide-list
+      & .slide
+        width: fit-content

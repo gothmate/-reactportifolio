@@ -1,5 +1,6 @@
 import Slider from '../../components/Slider';
 import GamesBig from '/GamesBig.svg'
+// import '../../styles/games.sass'
 
 interface Ititle {
 	id: number;
