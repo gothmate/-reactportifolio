@@ -22,7 +22,7 @@
 	--selected-item: 1;
 }
 
-.slide-controlle2:nth-child(3):checked ~ .slide-show .games-list {
+.slide-controller2:nth-child(3):checked ~ .slide-show .games-list {
 	--selected-item: 2;
 }
 

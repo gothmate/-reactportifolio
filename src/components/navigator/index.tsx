@@ -19,19 +19,52 @@ export function Navigator(props: NavigatorProps) {
     const [handleActive, setHandleActive] = useState('HOME')
 
     return (
-        <aside>
-            <nav className="navigation">
-                <div className="menu">
-                    <ul>
-                        <NavItems onClick={() => setHandleActive('HOME')} isActive={handleActive === 'HOME'} link="#home" item="HOME" image={Home} />
-                        <NavItems onClick={() => setHandleActive('WORKS')} isActive={handleActive === 'WORKS'} link="#works" item="WORKS" image={Works}/>
-                        <NavItems onClick={() => setHandleActive('GAMES')} isActive={handleActive === 'GAMES'} link="#games" item="GAMES" image={Games}/>
-                        <NavItems onClick={() => setHandleActive('GITHUB')} isActive={handleActive === 'GITHUB'} link="#github" item="GITHUB" image={Github}/>
-                        <NavItems onClick={() => setHandleActive('CONTACT')} isActive={handleActive === 'CONTACT'} link="#contatos" item="CONTACT" image={GetInTouch} />
-                        <div className="indicator"></div>
-                    </ul>
-                </div>
-            </nav>
-        </aside>
-    );
+			<aside>
+				<nav className='navigation'>
+					<div className='menu'>
+						<ul>
+							<NavItems
+								onClick={() => setHandleActive('HOME')}
+								isActive={handleActive === 'HOME'}
+								link='#home'
+								item='HOME'
+								image={Home}
+							/>
+							<NavItems
+								onClick={() => setHandleActive('WORKS')}
+								isActive={handleActive === 'WORKS'}
+								link='#works'
+								item='WORKS'
+								image={Works}
+							/>
+							<NavItems
+								onClick={() => setHandleActive('GAMES')}
+								isActive={handleActive === 'GAMES'}
+								link='#games'
+								item='GAMES'
+								image={Games}
+							/>
+							<NavItems
+								onClick={() => setHandleActive('GITHUB')}
+								isActive={handleActive === 'GITHUB'}
+								link='#github'
+								item='GITHUB'
+								image={Github}
+							/>
+							<NavItems
+								onClick={() => setHandleActive('CONTACT')}
+								isActive={handleActive === 'CONTACT'}
+								link='#contatos'
+								item='CONTACT'
+								image={GetInTouch}
+							/>
+							<div
+								className='indicator'
+								aria-label='Marcador de acesso do Menu'
+							></div>
+						</ul>
+					</div>
+				</nav>
+			</aside>
+		);
 }

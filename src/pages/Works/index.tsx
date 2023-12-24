@@ -3,9 +3,19 @@ import Slider from '../../components/Slider';
 import WorksBig from '/Works.svg'
 import Rain from '/Raindrops.gif'
 
+interface Ititle {
+    id: number;
+    linkGit: string;
+    img: string;
+    title: string;
+    description: string;
+    repository: string;
+    figma: string;
+    alt: string;
+}
 
 export default function Works() {
-  const workItems = [
+  const workItems: Ititle[] = [
 		{
 			id: 1,
 			linkGit: 'https://gothmate.github.io/shadyrhymesdesign/',
@@ -57,15 +67,15 @@ export default function Works() {
 	]; 
 
   return (
-    <section className="pageContainer" id="works">
-      <img className="works big" src={WorksBig} alt="works" />
-      <img className="rain" src={Rain} alt="background" />
-      <div className="bloco">
-        <div className="texto">
-          <h1>Works</h1>
-          <Slider works={workItems} /> 
-        </div>
-      </div>
-    </section>
-  )
+		<section className='pageContainer' id='works'>
+			<img className='works big' src={WorksBig} alt='works' />
+			<img className='rain' src={Rain} alt='background' />
+			<div className='bloco'>
+				<div className='texto'>
+					<h1>Works</h1>
+					<Slider works={workItems} />
+				</div>
+			</div>
+		</section>
+	);
 }
