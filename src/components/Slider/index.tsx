@@ -23,7 +23,7 @@ export default function Slider({works, games}: any){
 
 	function renderItem(el: any) {
 		return (
-			<li className={slide} key={el.id}>
+			<li className={slide} key={el.id} tabIndex={-1}>
 				<a href={el.linkGit} target='_blank'>
 					<img src={el.img} alt={el.alt} />
 				</a>

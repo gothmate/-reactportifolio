@@ -5,13 +5,13 @@ import Github from './pages/Github/index';
 import Contatos from './pages/Contato/index';
 
 export default function App() {
-  return (
-    <div className='main-page'>
-      <Home />
-      <Works />
-      <Games />
-      <Github />
-      <Contatos />
-    </div>
-  )
+	return (
+		<div className='main-page'>
+			<Home />
+			<Works />
+			<Games />
+			<Github />
+			<Contatos />
+		</div>
+	);
 }
